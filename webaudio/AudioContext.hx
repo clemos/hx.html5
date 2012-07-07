@@ -1,4 +1,5 @@
 package webaudio;
+import Html5Dom;
 
 @:native("AudioContext")
 extern class AudioContext {

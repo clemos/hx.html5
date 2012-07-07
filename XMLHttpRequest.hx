@@ -44,7 +44,7 @@ extern class XMLHttpRequest {
 	function getResponseHeader( name : String ) : String;
 	function getAllResponseHeaders() : String;
 	function overrideMimeType( mime : String ) : Void;
-	var responseType(default,null) : XMLHttpRequestResponseType;
+	var responseType/*(default,null)*/ : XMLHttpRequestResponseType;
 	var response(default,null) : Dynamic;
 	var responseText(default,null) : String;
 	var responseXML(default,null) : Document;

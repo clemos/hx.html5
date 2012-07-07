@@ -7,7 +7,7 @@ extern class AudioContext {
 	var currentTime(default,null) : Float;
 	var listener(default,null) : AudioListener;
 	function new() : Void;
-	@:overload(function(buffer:AudioBuffer,mixToMono:Bool):Void{}) 
+	@:overload(function(buffer:ArrayBuffer,mixToMono:Bool):Void{}) 
 	function createBuffer( numberOfChannels : Int, length : Int, sampleRate : Float ) : AudioBuffer;
 	function decodeAudioData( audioData : ArrayBuffer, successCallback : AudioBufferCallback, ?errorCallback : AudioBufferCallback ) : Void;
 	function createBufferSource() : AudioBufferSourceNode;

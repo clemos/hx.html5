@@ -1,5 +1,6 @@
 
 import js.Dom;
+import Html5Dom;
 
 enum XMLHttpRequestResponseType {
 	arraybuffer;
@@ -29,7 +30,7 @@ extern class XMLHttpRequest {
 	function setRequestHeader( name : String, value : String ) : Void;
 	var upload(default,null) : Dynamic; //XMLHttpRequestUpload;
 	var withCredentials(default,null) : Dynamic;
-	@:overload( function( data : FormData ) : Void {} )
+	//@:overload( function( data : FormData ) : Void {} )
 	@:overload( function( data : String ) : Void {} )
 	@:overload( function( data : Document ) : Void {} )
 	@:overload( function( data : Blob ) : Void {} )

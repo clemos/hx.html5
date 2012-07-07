@@ -22,6 +22,7 @@ extern class XMLHttpRequest {
 	
 	// event handler
 	var onreadystatechange : Void -> Void;
+	var onload : Void -> Void;
 	
 	function new() : Void;
 	

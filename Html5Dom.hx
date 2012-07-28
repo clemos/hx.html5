@@ -1584,7 +1584,7 @@ extern interface TimedTrackCue {
     
     public function getCueAsHTML(): DocumentFragment;
 }
-
+/*
 extern interface HTMLMediaElement implements HTMLElement {
     public var tracks                   (default, null): TimedTrack;
     public var error                    (default, null): MediaError;
@@ -1620,7 +1620,7 @@ extern interface HTMLMediaElement implements HTMLElement {
     
     public function addTrack(label: DOMString, kind: DOMString, language: DOMString): MutableTimedTrack;
 }
-
+*/
 extern interface HTMLFormControlsCollection implements HTMLCollection {
 }
 
@@ -1999,7 +1999,7 @@ extern interface HTMLCanvasElement implements HTMLElement {
     public function getContext(contextId: DOMString): Dynamic;
 }
 //Tested
-extern interface CanvasRenderingContext2D {
+/*extern interface CanvasRenderingContext2D {
 
     public var canvas: HTMLCanvasElement;
     
@@ -2074,21 +2074,21 @@ extern interface CanvasGradient {
 
 extern interface CanvasPattern {
 
-}
+}*/
 //Tested
-extern interface TextMetrics {
+/*extern interface TextMetrics {
     public var width            (default, null): Int;
-}
+}*/
 //Tested
-extern interface ImageData {
+/*extern interface ImageData {
     public var width              (default, null): Int;
     public var height             (default, null): Int;
     public var data               (default, null): CanvasPixelArray;
-}
-
+}*/
+/*
 extern interface CanvasPixelArray implements ArrayAccess<Int> {
   public var length(default, null): Int;
-}
+}*/
 
 extern interface Octet {}
 
